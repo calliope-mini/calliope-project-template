@@ -19,6 +19,19 @@ You can use any C/C++ IDE you want. Options include
 > Select the target `compile` and press the build button left of it:
 > ![compile](clion_compile.png)
 
+To enable GDB debugging, edit `config.json` and set `debug` to `1`.
+Run `openocd -f openocd.cfg` and use gdb remote debugging. Then use this
+to commence debugging:
+
+```
+$ arm-none-eabi-gdb build/calliope-mini-classic-gcc/source/calliope-project-template
+(gdb) target remote localhost:3333
+(gdb) break main
+(gdb) mon reset
+(gdb) c
+```
+
+
 # License
 
 This template is available under the [Apache License](LICENSE)
