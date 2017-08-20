@@ -20,7 +20,7 @@ You can use any C/C++ IDE you want. Options include
 > ![compile](clion_compile.png)
 
 To enable GDB debugging, edit `config.json` and set `debug` to `1`.
-Run `openocd -f openocd.cfg` and use gdb remote debugging. Then use this
+Install [OpenOCD](http://openocd.org/) and run `openocd -f openocd.cfg` and use gdb remote debugging. Then use this
 to commence debugging:
 
 ```
