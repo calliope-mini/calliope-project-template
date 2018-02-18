@@ -1,6 +1,6 @@
 {
   "build": {
-    "target": "calliope-mini-classic-gcc,*",
+    "target": "calliope-mini-classic-gcc-nosd,*",
     "targetSetExplicitly": true
   }
 }
